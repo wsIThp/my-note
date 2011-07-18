@@ -31,7 +31,9 @@ git init
 7创建第一个版本
  git commit -a -m "my first version"  (显示版本用tig)
 
+###打开一个标　　　ctrl + shift + t
 
+###   ｖｉｍ打开文件出现异常ｌｓ－ａ　删除这个文件（ ｒｍ－ｒｆ） .note.md.swp
 
 
 Global setup:
