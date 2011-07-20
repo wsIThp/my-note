@@ -55,6 +55,16 @@ git reset --hard HEAD^(如果已经生成版本用这个操作)
 
 ###   ｖｉｍ打开文件出现异常ｌｓ－ａ　删除这个文件（ ｒｍ－ｒｆ） .note.md.swp
 
+##C
+
+ c语言学习  learn.akea.cn/media/index.html
+
+ 编译gcc  代码 gcc -Wall a.c(a.c为例)  Wall(警告所有)
+
+echo $?( 打印也就是输出系统返回值是多少 )"0表示没有错误"
+
+
+
 
 Global setup:
 
