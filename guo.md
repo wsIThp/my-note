@@ -65,7 +65,7 @@ git add file(跟踪文件)
 
 ##C
 
-1. c语言学习  learn.akea.cn/media/index.html
+1. c语言学习  learn.akae.cn/media/index.html
 
 2. 编译gcc  代码 gcc -Wall a.c(a.c为例)  Wall(警告所有) 显示结果./a.out
 
