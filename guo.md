@@ -67,14 +67,13 @@ git add file(跟踪文件)
 
 1. c语言学习  learn.akea.cn/media/index.html
 
-2. 编译gcc  代码 gcc -Wall a.c(a.c为例)  Wall(警告所有)
+2. 编译gcc  代码 gcc -Wall a.c(a.c为例)  Wall(警告所有) 显示结果./a.out
 
 3. echo $?( 打印也就是输出系统返回值是多少 )"0表示没有错误"
 
+4.:sh    这是一种编译的的代码,可以在vim未关闭的情况下直接编译，如果要改程序直接按ctrl+d可返回vim中，修改完保存完继续编译   在sh编译下vim中修改完程序并且已经保存想要返回之前的程序，u可返回，（普通模式下） ,u可返回很多步，想要前进至之前的一步，ctrl+r,  
 
-
-
-#Global setup:
+Global setup:
 
  Set up git
   git config --global user.name "Your Name"
