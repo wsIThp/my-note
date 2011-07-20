@@ -20,7 +20,7 @@ vim中可以同时打开多个buffer 看下一个用 bn 前一个用 bp   在打
 git add file(跟踪文件)
 
 1创建一个文件夹
-   	 mkdir ggg
+    mkdir ggg
 
 2进入文件 
     	cd ggg 
