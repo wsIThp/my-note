@@ -23,8 +23,9 @@ git add file(跟踪文件)
 
      _mkdir ggg
 
-2进入文件 
-    	cd ggg 
+2进入文件
+ 
+     cd ggg 
 
 3初始化文件 
 	git init
