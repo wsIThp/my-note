@@ -19,30 +19,36 @@ vim中可以同时打开多个buffer 看下一个用 bn 前一个用 bp   在打
 ##git
 git add file(跟踪文件)
 
-1创建一个文件
+1.创建一个文件
 
      _mkdir ggg
 
-2进入文件
+2.进入文件
  
      cd ggg 
 
-3初始化文件 
-	git init
+3.初始化文件
+ 
+     git init
 
-4创建文件
- 	ls -a
+4.创建文件
 
-5创建文件
- 	vim hello.c
+     ls -a
 
-6让GIT知道这个文件
-	 git hello.c
+5.创建文件
+
+     vim hello.c
+
+6.让GIT知道这个文件
+
+     git hello.c
 
 7创建第一个版本
- 	git commit -a -m "my first version"  (显示版本用tig)
 
-#git
+     git commit -a -m "my first version"  (显示版本用tig)
+
+#git 
+
 1.git.diff     查看 guo.md和 .git(已经上传的)里面的 git.diff的区别
     
 2.git reset --hard HEAD(回复对guo.md的修改)
