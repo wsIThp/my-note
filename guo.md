@@ -41,11 +41,11 @@ git init
  git commit -a -m "my first version"  (显示版本用tig)
 
 #git
-git.diff     查看 guo.md和 .git(已经上传的)里面的 git.diff的区别
+1.git.diff     查看 guo.md和 .git(已经上传的)里面的 git.diff的区别
     
-git reset --hard HEAD(回复对guo.md的修改)
+2.git reset --hard HEAD(回复对guo.md的修改)
 
-git reset --hard HEAD^(如果已经生成版本用这个操作) 
+3.git reset --hard HEAD^(如果已经生成版本用这个操作) 
 
 ###打开一个标　　　ctrl + shift + t
 
@@ -57,16 +57,16 @@ git reset --hard HEAD^(如果已经生成版本用这个操作)
 
 ##C
 
- c语言学习  learn.akea.cn/media/index.html
+1. c语言学习  learn.akea.cn/media/index.html
 
- 编译gcc  代码 gcc -Wall a.c(a.c为例)  Wall(警告所有)
+2. 编译gcc  代码 gcc -Wall a.c(a.c为例)  Wall(警告所有)
 
-echo $?( 打印也就是输出系统返回值是多少 )"0表示没有错误"
-
-
+3. echo $?( 打印也就是输出系统返回值是多少 )"0表示没有错误"
 
 
-Global setup:
+
+
+#Global setup:
 
  Set up git
   git config --global user.name "Your Name"
