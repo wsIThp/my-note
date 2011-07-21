@@ -12,6 +12,23 @@ mynote
 vim中可以同时打开多个buffer 看下一个用 bn 前一个用 bp   在打开一个buffer中直接打开另一个buffer用:e+b.c
 退出一个buffer　用bd  
 
+:wq
+:Wq
+:'<,'>Wq
+:q!
+:sh
+:w
+:bn
+:BN
+:e ~/.gitconfig
+:w!
+:q
+: set nonu
+: nu no
+:nuno
+:no nu
+:nonu
+:set nu
 
 
 
