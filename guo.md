@@ -57,6 +57,11 @@ git add file(跟踪文件)
 
 3.git reset --hard HEAD^(如果已经生成版本用这个操作) 
 
+4.想要删除自己笔记中的仓库  dashboard-点开不想要的项目-admin-delete this repository
+
+5.想要删除仓库中的一个文件  在之前的目录下（git add trash）输入1.git rm trash  2.git commit -a 3.git push
+
+
 ###打开一个标　　　ctrl + shift + t
 
 
