@@ -12,6 +12,11 @@ mynote
 vim中可以同时打开多个buffer 看下一个用 bn 前一个用 bp   在打开一个buffer中直接打开另一个buffer用:e+b.c
 退出一个buffer　用bd  
 
+dd vim中写程序剪切某行程序代码
+yy vim中粘帖刚才剪切的那段代码
+p  vim中复制这段代码
+
+
 :wq
 :Wq
 :'<,'>Wq
