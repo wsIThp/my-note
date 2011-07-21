@@ -17,26 +17,6 @@ yy vim中粘帖刚才剪切的那段代码
 p  vim中复制这段代码
 
 
-:wq
-:Wq
-:'<,'>Wq
-:q!
-:sh
-:w
-:bn
-:BN
-:e ~/.gitconfig
-:w!
-:q
-: set nonu
-: nu no
-:nuno
-:no nu
-:nonu
-:set nu
-
-
-
 
 ##git
 git add file(跟踪文件)
@@ -98,6 +78,13 @@ git add file(跟踪文件)
 5. 写程序，有时候修改很少代码，但需要很长的语言解释，生成的版本中只能显示很少的文字，这是在生成版本时，用git commit -a，会弹出一个vim，在这个环境下写注释，第一行会在生成的版本中显示，其余的解释不会在版本中显示enter键会显示。
 
 
+# 配置文件
+目前学了三个（都是隐藏文件）
+1.vimrc
+2.gitconfig
+3.bashrc  (可设置下载代码为a，保存后，下载只需只用a即可下载，之前得全盘浏览一遍source .bashrc)
+ vim .bashrc 写入alias a="sudo apt-get install"保存
+source .bashrc 即可使用（foutune |cowsay为例） 
 #Global setup:
 
  Set up git
