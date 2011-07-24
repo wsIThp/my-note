@@ -18,16 +18,26 @@ p  vim中复制这段代码
 ##一些指令
 
   which git:看git 在系统下那一块
-  locate vimrc:列出系统下所有的vimrc文件
-  sudo updatedb:更新数据库（locate 指令的弱点：不会显示出刚刚建立的文件，所以得更新数据库，这样会解决之一弱点）
-  find XXX：列出XXX中的所有内容
-  find XXX | grep git(grep:字符窜)：列出XXX文件中包含字符窜git的文件“|”把前面的输出作为后面的输入
-  ps aux:输出当期当前的进程，（相当于windows下的人物管理器）
-  ps aux | grep firefox:查看firefox的进程号：2003
-  kill 2003:可以关闭掉firefox.
-  kill -9 2003:如果firefox已经死掉，这条命令可强制关掉firefox.
-  XXX hello:查找含有hello的文件，e可直接进入那个文件，多个文件的上下移动j,k.
-  执行make命令的前提是当前目录下必须含有makefile文件。
+ 
+ locate vimrc:列出系统下所有的vimrc文件
+ 
+ sudo updatedb:更新数据库（locate 指令的弱点：不会显示出刚刚建立的文件，所以得更新数据库，这样会解决之一弱点）
+ 
+ find XXX：列出XXX中的所有内容
+ 
+ find XXX | grep git(grep:字符窜)：列出XXX文件中包含字符窜git的文件“|”把前面的输出作为后面的输入
+ 
+ ps aux:输出当期当前的进程，（相当于windows下的人物管理器）
+ 
+ ps aux | grep firefox:查看firefox的进程号：2003
+ 
+ kill 2003:可以关闭掉firefox.
+ 
+ kill -9 2003:如果firefox已经死掉，这条命令可强制关掉firefox.
+ 
+ XXX hello:查找含有hello的文件，e可直接进入那个文件，多个文件的上下移动j,k.
+ 
+ 执行make命令的前提是当前目录下必须含有makefile文件。
 
 
 
@@ -81,10 +91,11 @@ git add file(跟踪文件)
   想要回到之前的某个版本，之前的操作会显得很麻烦，git checkout + 编码（每一个版本都有编码，在tig中按d看编码，然后复制粘帖即可回到想回去的那个版本）
 
   想回到最新的那个版本即HEAD版本，代码是git checkout master
-###打开一个标　　　ctrl + shift + t
+  打开一个标　　　ctrl + shift + t
 
-  git branch :输出当前的分支
-  返回到HEAD版本时，想要回到以前的版本，git checkout 编码 -b XXX（XXX代表新命名的一个分支名，也就是说没命名时之前回到的版本时，git branch会显示no master，如果有了这个命名，则git branch 会显示刚才命名的这个名字，git checkout master还可以回到HEAD版本，再要回去之前的那个已经命名的版本时git checkout XXX即可实现）
+  git branch :输出当前的分支返回到HEAD版本时，想要回到以前的版本，
+  
+  git checkout 编码 -b XXX（XXX代表新命名的一个分支名，也就是说没命名时之前回到的版本时，git branch会显示no master，如果有了这个命名，则git branch 会显示刚才命名的这个名字，git checkout master还可以回到HEAD版本，再要回去之前的那个已经命名的版本时git checkout XXX即可实现）
   
   git br -D XXX：可以删除之前命名的分支
 
