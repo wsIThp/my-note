@@ -1,8 +1,10 @@
 mynote
-aaaaaaaaaa
 
 
 ## vim
+
+
+snipMate安装这个插件，写程序能自动补齐代码。
 
 
 要粘帖的话  先进入插入模式
@@ -54,13 +56,15 @@ git add file(跟踪文件)
 
 1.git.diff     查看 guo.md和 .git(已经上传的)里面的 git.diff的区别
     
-2.git reset --hard HEAD(回复对guo.md的修改)
+2.git reset --hard HEAD(恢复对文件的错误修改)
 
-3.git reset --hard HEAD^(如果已经生成版本用这个操作) 
+3.git reset --hard HEAD^(如果错误操作已经生成版本用这个操作) 
 
-4.想要删除自己笔记中的仓库  dashboard-点开不想要的项目-admin-delete this repository
+4.git revert   (如果已将生成的版本push到服务器上，用这个操作，这个操作的实际意义时先让之前的错误操作从服务器上取下来包括版本，然后再做正确的修改，重新push到服务器上，这样才能达到真正的目的，只是此时会多了两个原本没必要的版本)
 
-5.想要删除仓库中的一个文件  在之前的目录下（git add trash）输入1.git rm trash  2.git commit -a 3.git push
+5.想要删除自己笔记中的仓库  dashboard-点开不想要的项目-admin-delete this repository
+
+6.想要删除仓库中的一个文件  在之前的目录下（git add trash）输入1.git rm trash  2.git commit -a 3.git push
 
 
 ###打开一个标　　　ctrl + shift + t
