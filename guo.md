@@ -1,8 +1,4 @@
-mynote
-
-
 ## vim
-
 
 snipMate安装这个插件，写程序能自动补齐代码。
 
@@ -18,6 +14,20 @@ vim中可以同时打开多个buffer 看下一个用 bn 前一个用 bp   在打
 dd vim中写程序剪切某行程序代码
 yy vim中粘帖刚才剪切的那段代码
 p  vim中复制这段代码
+
+##一些指令
+
+  which git:看git 在系统下那一块
+  locate vimrc:列出系统下所有的vimrc文件
+  sudo updatedb:更新数据库（locate 指令的弱点：不会显示出刚刚建立的文件，所以得更新数据库，这样会解决之一弱点）
+  find XXX：列出XXX中的所有内容
+  find XXX | grep git(grep:字符窜)：列出XXX文件中包含字符窜git的文件“|”把前面的输出作为后面的输入
+  ps aux:输出当期当前的进程，（相当于windows下的人物管理器）
+  ps aux | grep firefox:查看firefox的进程号：2003
+  kill 2003:可以关闭掉firefox.
+  kill -9 2003:如果firefox已经死掉，这条命令可强制关掉firefox.
+  XXX hello:查找含有hello的文件，e可直接进入那个文件，多个文件的上下移动j,k.
+  执行make命令的前提是当前目录下必须含有makefile文件。
 
 
 
@@ -66,10 +76,21 @@ git add file(跟踪文件)
 
 6.想要删除仓库中的一个文件  在之前的目录下（git add trash）输入1.git rm trash  2.git commit -a 3.git push
 
+7.一个文件有很多个版本 .
+  
+  想要回到之前的某个版本，之前的操作会显得很麻烦，git checkout + 编码（每一个版本都有编码，在tig中按d看编码，然后复制粘帖即可回到想回去的那个版本）
 
+  想回到最新的那个版本即HEAD版本，代码是git checkout master
 ###打开一个标　　　ctrl + shift + t
 
+  git branch :输出当前的分支
+  返回到HEAD版本时，想要回到以前的版本，git checkout 编码 -b XXX（XXX代表新命名的一个分支名，也就是说没命名时之前回到的版本时，git branch会显示no master，如果有了这个命名，则git branch 会显示刚才命名的这个名字，git checkout master还可以回到HEAD版本，再要回去之前的那个已经命名的版本时git checkout XXX即可实现）
+  
+  git br -D XXX：可以删除之前命名的分支
 
+8.一.gitk 二.qgit支持鼠标看以前的版本，（之前要安装）  
+ 
+9.git commit -a -v:(版本中会显示此次修改的内容)
 
 
 
@@ -80,6 +101,8 @@ git add file(跟踪文件)
 1. c语言学习  learn.akae.cn/media/index.html
 
 2. 编译gcc  代码 gcc -Wall a.c(a.c为例)  Wall(警告所有) 显示结果./a.out
+   编译gcc  代码 gcc -l a.c(a.c 为例)  -l后边紧跟库（去掉lib）的名字,一般都链接标准库-lc，所以一般都省略不写。
+  
 
 3. echo $?( 打印也就是输出系统返回值是多少 )"0表示没有错误"
 
@@ -94,6 +117,9 @@ git add file(跟踪文件)
 
 7.一个完整的C项目，不仅仅是一个文件，而是多个，在阅读程序时，经常会找不到定义调用，对于此类情况可以在vim中安装一个叫 ctags的程序，ctags hello.c这样会使hello.c产生一个新的文件tags然后在进入vim中读程序。如果时多文件程序，则使用这条命令（ctags *）vim全部打开.c文件，ctrl-]可以查看函数的定义ctrl-t可以返回到函数的调用
 
+8.看一个很大的C程序时，ctrl+g直接跳到最后一页，可以看此程序有多少行，gg可以返回到最前端。
+
+9.在C程序中会有很多个文件，有时想要该其中一个文件的名字，需要两句代码1.mv main.c hello.c2.git add *(这句代码可以全部跟踪所有文件)
 
 # 配置文件
 目前学了三个（都是隐藏文件）
