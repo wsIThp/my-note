@@ -8,12 +8,34 @@ snipMate安装这个插件，写程序能自动补齐代码。
 
 删除文本时，先进入可视行模式（大写的Ｖ）(此时不是插入模式时正常模式及命令模式)　ｄ删除　p粘帖( 小写大写粘帖位置不同)  ｙ是复制  <>( 整体代码缩进（＞）返回（＜）)　　
 
-vim中可以同时打开多个buffer 看下一个用 bn 前一个用 bp   在打开一个buffer中直接打开另一个buffer用:e+b.c
+vim中可以同时打开多个buffer 看下一个用 bn 前一个用 bp   在打开一个buffer中直接打开另一个buffer用:e+b.c 。。在同一个vim中可以同时看到多个buffer。。：new（横向代开窗口）：vnew(纵向打开新的窗口) 。  
+
 退出一个buffer　用bd  
 
 dd vim中写程序剪切某行程序代码
 yy vim中粘帖刚才剪切的那段代码
 p  vim中复制这段代码
+#小程序 
+
+gource：这个程序会以视频的形式播放修改历史。
+
+ cd/etc/apt  ：里面有个source.list文件，里面可以看到下载软件的地址链接。
+
+ dpkg -L tree:看软件tree安装在哪里。
+
+ sudo apt-get remove/purge mplayer：卸载mplayer软件，（mplayer为例）
+
+#学习地址
+ 
+ 谷狗dereck vim：vim 学习视频
+
+
+
+
+#bash
+
+能不能删除一个文件相当于看父文件的写权限
+
 
 ##一些指令
 
@@ -98,6 +120,8 @@ git add file(跟踪文件)
   git checkout 编码 -b XXX（XXX代表新命名的一个分支名，也就是说没命名时之前回到的版本时，git branch会显示no master，如果有了这个命名，则git branch 会显示刚才命名的这个名字，git checkout master还可以回到HEAD版本，再要回去之前的那个已经命名的版本时git checkout XXX即可实现）
   
   git br -D XXX：可以删除之前命名的分支
+
+  git checkout head版本的编码号（备份一个一模一样的tig版本防止修改tig很垃圾时想要恢复之前的版本）（同样-b可以重命名）
 
 8.一.gitk 二.qgit支持鼠标看以前的版本，（之前要安装）  
  
