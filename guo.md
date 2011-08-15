@@ -131,7 +131,7 @@ git add file(跟踪文件)
 
 
 
-###   ｖｉｍ打开文件出现异常ｌｓ－ａ　删除这个文件（ ｒｍ－ｒｆ） .note.md.swp
+##   ｖｉｍ打开文件出现异常ｌｓ－ａ　删除这个文件（ ｒｍ－ｒｆ） .note.md.swp
 
 ##C
 
@@ -178,6 +178,38 @@ source .bashrc 即可使用（foutune |cowsay为例）
 3.while和 do while的区别：第一次执行不同，while是先判断再执行，do while先执行后判断，do while至少执行一次。
 
 4.=表示赋值，值可以改变，==是等于，值不会变。NULL是指针里面的零（初始化的时候用到）。
+
+###C(five chess)
+1.从linux界面跳转到文本界面：ctrl+Alt+f1 返回：Alt+f7
+
+2.Makefile文件中需要写入的内容：第一行，告诉系统源文件。第二行，告诉系统所要到的命令（tab键）写完后（回车键）。第三行，clean：（回车键）（tab键）
+
+#main:main.c                两种模式等效
+#   gcc main.c -o main -Wall
+#clean:
+#   rm -rf main
+#   rm -rf *.o
+#   rm -rf ~*
+
+src=main.c i_dta.c
+para=-o main -Wall
+main:$(src)
+    gcc $(src) $(para)
+clean:
+	 rm -rf main
+	 rm -rf *.o
+	 rm -rf ~*
+
+
+
+
+3.framebuffer:一种机制，将内存中显存的内容显示到屏幕上（一一印射的关系）所以只需要做两步：1：建立一一印射的关系。2：操作文件（通过文件操作内存）
+
+4.用man向看函数时：1.命令函数。2.系统函数。3.标准C函数。
+
+5.C语言中自己定义头文件时用"",在这个.h文件中写内容时有标准格式第一行：#ifndef _FUNC_H_。 第二行：#define _FUNC_H_前两行后面内容必须一样。最后一行#endif
+
+6.用Makefile编译时，Makefile中必须包含所有的.c文件包括main.c 自己定义的.h文件中包含所有C文件中的函数。
 
 #Global setup:
 
