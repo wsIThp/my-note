@@ -31,9 +31,6 @@ gource：这个程序会以视频的形式播放修改历史。
  
  谷狗dereck vim：vim 学习视频
 
-
-
-
 #bash
 
 能不能删除一个文件相当于看父文件的写权限
@@ -183,7 +180,6 @@ source .bashrc 即可使用（foutune |cowsay为例）
 1.从linux界面跳转到文本界面：ctrl+Alt+f1 返回：Alt+f7
 
 2.Makefile文件中需要写入的内容：第一行，告诉系统源文件。第二行，告诉系统所要到的命令（tab键）写完后（回车键）。第三行，clean：（回车键）（tab键）
-
 #main:main.c                两种模式等效
 #   gcc main.c -o main -Wall
 #clean:
@@ -199,17 +195,13 @@ clean:
 	 rm -rf main
 	 rm -rf *.o
 	 rm -rf ~*
-
-
-
-
 3.framebuffer:一种机制，将内存中显存的内容显示到屏幕上（一一印射的关系）所以只需要做两步：1：建立一一印射的关系。2：操作文件（通过文件操作内存）
 
 4.用man向看函数时：1.命令函数。2.系统函数。3.标准C函数。
 
 5.C语言中自己定义头文件时用"",在这个.h文件中写内容时有标准格式第一行：#ifndef _FUNC_H_。 第二行：#define _FUNC_H_前两行后面内容必须一样。最后一行#endif
 
-6.用Makefile编译时，Makefile中必须包含所有的.c文件包括main.c 自己定义的.h文件中包含所有C文件中的函数。
+6.用Makefile编译时，Makefile中必须包含所有的.c文件包括main.c 。。自己定义的.h文件中包含所有C文件中的函数。
 
 #Global setup:
 
