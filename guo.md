@@ -1,6 +1,6 @@
 ## vim
 
-##j付给k       k=j
+#j付给k       k=j
 
 snipMate安装这个插件，写程序能自动补齐代码。
 
@@ -60,7 +60,7 @@ gource：这个程序会以视频的形式播放修改历史。
  
  执行make命令的前提是当前目录下必须含有makefile文件。
 
-##改权限：chmod xxx(要改的新的权限数字) 文件名
+#改权限：chmod xxx(要改的新的权限数字) 文件名
 
 ##git
 git add file(跟踪文件)
@@ -180,12 +180,12 @@ source .bashrc 即可使用（foutune |cowsay为例）
 1.从linux界面跳转到文本界面：ctrl+Alt+f1 返回：Alt+f7
 
 2.Makefile文件中需要写入的内容：第一行，告诉系统源文件。第二行，告诉系统所要到的命令（tab键）写完后（回车键）。第三行，clean：（回车键）（tab键）
-#main:main.c                两种模式等效
-#   gcc main.c -o main -Wall
-#clean:
-#   rm -rf main
-#   rm -rf *.o
-#   rm -rf ~*
+main:main.c                两种模式等效
+   gcc main.c -o main -Wall
+clean:
+   rm -rf main
+   rm -rf *.o
+   rm -rf ~*
 
 src=main.c i_dta.c
 para=-o main -Wall
@@ -201,7 +201,7 @@ clean:
 
 5.C语言中自己定义头文件时用"",在这个.h文件中写内容时有标准格式第一行：#ifndef _FUNC_H_。 第二行：#define _FUNC_H_前两行后面内容必须一样。最后一行#endif
 
-6.用Makefile编译时，Makefile中必须包含所有的.c文件包括main.c 。。自己定义的.h文件中包含所有C文件中的函数。
+##6.用Makefile编译时，Makefile中必须包含所有的.c文件包括main.c 。。自己定义的.h文件中包含所有C文件中的函数。
 
 #Global setup:
 
