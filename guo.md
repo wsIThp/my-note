@@ -63,7 +63,7 @@ gource：这个程序会以视频的形式播放修改历史。
  
  执行make命令的前提是当前目录下必须含有makefile文件。
 
-
+##改权限：chmod xxx(要改的新的权限数字) 文件名
 
 ##git
 git add file(跟踪文件)
