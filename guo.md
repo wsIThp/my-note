@@ -179,7 +179,7 @@ source .bashrc 即可使用（foutune |cowsay为例）
 ###C(five chess)
 1.从linux界面跳转到文本界面：ctrl+Alt+f1 返回：Alt+f7
 
-2.Makefile文件中需要写入的内容：第一行，告诉系统源文件。第二行，告诉系统所要到的命令（tab键）写完后（回车键）。第三行，clean：（回车键）（tab键）
+2.Makefile文件中需要写入的内容：第一行，告诉系统源文件。第二行，告诉系统所要到的命令（tab键）写完后（回车键）。第三行，clean：（回车键）（tab键）(目标。依赖。命令)：$@:表示目标$^:表示依赖的符号$：引用变量$<：依赖第一个文件$^：依赖所有文件。%:通配符。
 main:main.c                两种模式等效
    gcc main.c -o main -Wall
 clean:
@@ -202,6 +202,23 @@ clean:
 5.C语言中自己定义头文件时用"",在这个.h文件中写内容时有标准格式第一行：#ifndef _FUNC_H_。 第二行：#define _FUNC_H_前两行后面内容必须一样。最后一行#endif
 
 ##6.用Makefile编译时，Makefile中必须包含所有的.c文件包括main.c 。。自己定义的.h文件中包含所有C文件中的函数。
+
+
+###C
+1.整型int占四个字节，，char占1个字节，，指针型占四个字节，，short占2个字节。。a.out存储在硬盘上。。在虚拟内存中的区域分配从下到上一次是text，rodate，data，bss，堆，栈，命令行，系统内存。。。
+全局变量：：初始化的全局变量存储在data区域，未初始化的全局变量存储在bss区域。。局部变量存储在栈上。。堆的作用域面向所有文件。栈随着本函数的结束而释放。。。
+2.gg=G：代码会自动补齐....
+3.exit:主函数中相当于return。。。。。其他函数中直接退出。
+4.使用gdb命令：1.gcc -g a.c   2.gdb a.out 
+5.运行一个C程序的过程1.预处理（gcc -E a.c）：打开头文件，过滤注释。2.编译gcc -s a.c3.汇编gcc a.c -c ->a.o4.链接（1.相对地址->绝对地址2.插入历程）gcc ->a.out（ELF格式）
+6.a.o与a.out的区别：1.地址不同2.是否插入启动代码3.是否有执行权限。
+7.添加静态库：1：gcc -c a.c b.c c.c：--->生成.o文件2：ar rs libXXXX.a a.o b.o c.o。。。XXX：静态库名字3.使用静态库：gcc main.c -L. -lXXX -IXXX -o main(-I:指定查找文件路径。-L.：加载库当前路径-l：库名字)
+8.命令ldd：追踪程序执行时依赖于那些文件.
+9.添加共享库：1.gcc -c -fPIC a.c b.c c.c(-f后面跟一些编译选项，PIC是其中一种，表示生成位置无关代码)2.gcc -shared -o libXXX.so a.o b.o c.o 。。。3.gcc main.c -g -L. -lstack -Istack -o main..这时候系统会报错：原因是找不到共享库。处理这种错误有三种方法：1：export LD_LIBRARY_PATH=pwd(当前路径)2：把共享库复制到系统默认的共享库（/usr/lib）中.3:将当前路径写入到系统文件（etc/ld.so.conf）中。之后要输入sudo ldconfig命令，目的是更新信息。
+
+
+
+
 
 #Global setup:
 
